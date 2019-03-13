@@ -63,3 +63,40 @@ h1 {
 	height: 100%;
 	background: var(--container-bg-color);
 }
+
+.split {
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.split-left {
+	left: 0%;
+	background: url('images/designPic.jpeg') center center no-repeat;
+	background-size: cover;
+}
+
+.split-left:before {
+	position: absolute;
+	content: '';
+	height: 100%;
+	width: 100%;
+	background: var(--left-bg-color);
+}
+
+.split-right {
+	right: 0%;
+	background: url('images/programmerPic.jpeg') center center no-repeat;
+	background-size: cover;
+}
+
+.split-right:before {
+	position: absolute;
+	content: '';
+	height: 100%;
+	width: 100%;
+	background: var(--right-bg-color);
+}
+
+/* transition */
